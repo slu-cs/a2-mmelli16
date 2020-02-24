@@ -5,7 +5,7 @@ const file = readline.createInterface({
 });
 const mongoose = require('mongoose');
 const connect = require('./db');
-const voter= require('./schema');
+const Voter= require('./schema');
 
 connect();
 
@@ -13,7 +13,7 @@ const voters=[];
 file.on('line', function(line) {
   const columns = line.split(',');
   voters.push(
-    new voter ({
+    new Voter ({
     firstName: columns[0],
     last_n: columns[1],
     zipcode: columns[2],

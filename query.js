@@ -6,6 +6,6 @@ connect();
 
 const queries[
 //Query 1: How many registered voters in canton
-  Voter.find
+  
 
 ]
